@@ -41,3 +41,10 @@ def max_min():
     print("A legnagyobb összeg:", lnagyobb, ", és", lkisebb, "a legkisebb összeg." )
 max_min()
 
+def osszesen():
+    ossz = 0
+    for i in sor:
+        ossz += int(i)
+    print("Összesen", ossz, "forintot költöttünk.")
+osszesen()
+
