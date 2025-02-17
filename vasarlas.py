@@ -2,8 +2,6 @@ f = open('vasarlas.csv', 'r')
 sor = f.readline()
 sor = sor.strip().split(";")
 
-print(sor)
-
 def nap():
     napok = 0
     for i in sor:
@@ -53,10 +51,10 @@ def lhsorozat():
     nullaNap = 0
     for i in sor:
         if i == "0":
-            sorozat +=1
-            if sorozat > nullaNap:
-                nullaNap = sorozat
+            nullaNap +=1
+            if nullaNap > sorozat:
+                sorozat = nullaNap
         else:
-            sorozat = 0       
-    print("A legtöbb egymás utáni nap, amin nem költöttünk:",nullaNap)         
+            nullaNap = 0       
+    print("A legtöbb egymás utáni nap, amin nem költöttünk:",sorozat)         
 lhsorozat()
