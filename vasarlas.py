@@ -48,3 +48,15 @@ def osszesen():
     print("Összesen", ossz, "forintot költöttünk.")
 osszesen()
 
+def lhsorozat():
+    sorozat = 0
+    nullaNap = 0
+    for i in sor:
+        if i == "0":
+            sorozat +=1
+            if sorozat > nullaNap:
+                nullaNap = sorozat
+        else:
+            sorozat = 0       
+    print("A legtöbb egymás utáni nap, amin nem költöttünk:",nullaNap)         
+lhsorozat()
