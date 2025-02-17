@@ -29,3 +29,15 @@ def napiatlag():
     print("A napi átlagos költés:",round(atl),"ft")
 napiatlag()
 
+def max_min():
+    lnagyobb = 0 
+    lkisebb = 30876
+    for i in sor:
+        j = int(i)
+        if j > lnagyobb:
+            lnagyobb = j
+        if j < lkisebb and j != 0:
+            lkisebb = j
+    print("A legnagyobb összeg:", lnagyobb, ", és", lkisebb, "a legkisebb összeg." )
+max_min()
+
